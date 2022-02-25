@@ -16,7 +16,7 @@
 }
 
 html {
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -160,7 +160,7 @@ body {
 /* end header*/
 /* start landing section  */
 .landing {
-    background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)) , url('../img/8.jpg');
+    background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)), url('../img/8.jpg');
     background-size: cover;
     height: calc(100vh - 65px);
     position: relative;
@@ -216,15 +216,17 @@ body {
 }
 
 
-.slide-left{
+.slide-left {
     animation: slide-left 1s linear forwards;
 }
-@keyframes slide-left{
-    0%{
+
+@keyframes slide-left {
+    0% {
         transform: translate(80px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translate(0px);
         opacity: 1;
     }
@@ -565,8 +567,9 @@ body {
         font-size: 15px;
     }
 }
-@media(max-width: 767px){
-    .header .container .pr{
+
+@media(max-width: 767px) {
+    .header .container .pr {
         font-size: 20px;
     }
 }
